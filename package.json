@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/sammayo/Distributed-Press#readme",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "fs": "0.0.1-security",
+    "truffle-contract": "^2.0.2",
+    "truffle-hdwallet-provider": "0.0.3"
   }
 }
