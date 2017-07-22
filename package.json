@@ -1,0 +1,29 @@
+{
+  "name": "distributed-press",
+  "version": "1.0.0",
+  "description": "distribute the press",
+  "main": "backend/main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sammayo/Distributed-Press.git"
+  },
+  "keywords": [
+    "distributed",
+    "press"
+  ],
+  "author": "Aspyn, Cem, Sam, Aditi, Nathan, Alice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sammayo/Distributed-Press/issues"
+  },
+  "homepage": "https://github.com/sammayo/Distributed-Press#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
