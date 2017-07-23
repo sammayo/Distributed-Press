@@ -32,5 +32,9 @@
     "express": "^4.15.3",
     "jquery": "^3.2.1",
     "path": "^0.12.7"
+    "express": "^4.15.3",
+    "fs": "0.0.1-security",
+    "truffle-contract": "^2.0.2",
+    "truffle-hdwallet-provider": "0.0.3"
   }
 }
