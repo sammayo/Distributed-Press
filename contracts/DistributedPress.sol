@@ -11,10 +11,10 @@ contract DistributedPress {
     bytes32[] public ipfsHashes;
     event entryAdded(bytes32);
 
-    function addEntry(bytes32 ipfsHash, string _title, address _author, uint _uploadTimestamp) {
+    function addEntry(bytes32 ipfsHash, string _title, address _author) {
         require(entries[ipfsHash].uploadTimestamp == 0);
 
-        entries[ipfsHash] = entry({title: _title, author: _author, uploadTimestamp: _uploadTimestamp});
+        entries[ipfsHash] = entry({title: _title, author: _author, uploadTimestamp: now});
         ipfsHashes.push(ipfsHash);
         entryAdded(ipfsHash);
     }
