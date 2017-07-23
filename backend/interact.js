@@ -10,7 +10,7 @@ var ad = "0x" + abi.rawEncode(["bytes32"], [ '0xa63bbb' ]).toString('hex');
 let secrets = JSON.parse(fs.readFileSync("secrets.json", "utf8"));
 let mnemonic = secrets.mnemonic;
 let provider = new HDWalletProvider(mnemonic, "https://rinkeby.infura.io/");
-let networkId = 4;
+let networkId = 42;
 //let contractAddress = '0x127aa7dca9AeB8422De13cc4DC1C984d062dF4C5';
 //let web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 
