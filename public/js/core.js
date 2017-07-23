@@ -1,15 +1,18 @@
 $("#btn-add-book").click(() => window.location.href="/addbook");
+$("#submit").click(() => {
+    // Call Cem's shit to upload
+});
 
 var Book = Backbone.Model.extend({});
 
 var Books = Backbone.Collection.extend({
-  model: Book,
-  url: "examples/territories.json" // need to update this
+    model: Book,
+    url: "/getAllBooks" // need to update this
 });
 
 var books = new Books();
 books.push(new Book({
-    "book": "A Tale of Two Cities",
+    "title": "A Tale of Two Cities",
     "author": "Charles",
     "date": "",
     "hash": "fudge"
@@ -17,7 +20,7 @@ books.push(new Book({
 
 var columns = [
     {
-        name: "book",
+        name: "title",
         label: "Book",
         cell: "string"
     }, {
@@ -43,3 +46,4 @@ var grid = new Backgrid.Grid({
 
 // Render the grid and attach the root to your HTML document
 $("#grid-book-data").append(grid.render().el);
+books.fetch({reset: true});
